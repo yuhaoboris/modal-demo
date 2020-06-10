@@ -1,0 +1,82 @@
+.jconfirm.jconfirm-default .jconfirm-bg {
+  background-color: #444;
+  opacity: .6;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  border-radius: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 24px;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-title-c{
+  box-sizing: border-box;
+  color: #323233;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-content-pane{
+  box-sizing: border-box;
+  color: #646566;
+  text-align: center;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons{
+  display: flex;
+  border-top: 1px solid #e2e4ea;
+  padding-bottom: 0;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons button{
+  position: relative;
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #323233;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons button:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: auto;
+  z-index: 100;
+  border-right: 0.02rem solid #e2e4ea;
+  height: 100%;
+  transform: scaleX(.5) translateX(100%);
+  transform-origin: 100% 50%;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons button:hover {
+  background-color: #fff;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons button:focus {
+  outline: none;
+}
+
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons button.jconfirm-btn__cancel {
+  color: #666f83;
+}
+.jconfirm.jconfirm-default .jconfirm-box .jconfirm-buttons button.jconfirm-btn__confirm {
+  color: #1989fa;
+}
